@@ -1,0 +1,143 @@
+body {
+    background-color: bisque;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.container h2 {
+    font-family: "Young Serif";
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    max-width: 800px;
+    margin: 80px auto;
+    border-radius: 14px;
+}
+
+@media (max-width:375px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0%;
+
+    }
+
+    .container .table {
+        flex-direction: column;
+    }
+}
+
+.container img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.container p {
+    font-size: 14px;
+}
+
+.container .preparation-time {
+    background-color: hsl(333, 64%, 89%);
+    padding: 11px;
+    border-radius: 14px;
+}
+
+.container .preparation-time h3 {
+    margin-left: 20px;
+    color: hsl(332deg 40.44% 28.37%);
+}
+
+.container .preparation-time ul li {
+    padding: 5px 10px 5px 20px;
+}
+
+.container .ingredients h2 {
+    color: rgb(167 42 32);
+    ;
+}
+
+.container .ingredients ul li {
+    padding: 5px 10px 5px 20px;
+
+}
+
+.container .ingredients ul {
+    list-style: none;
+    position: relative;
+}
+
+.container .ingredients ul li::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(167 42 32);
+    left: 22px;
+    margin-top: 6px;
+
+}
+
+.container .instructions ol {
+    list-style: none;
+    position: relative;
+}
+
+.container .instructions ol li::before {
+    content: attr(data-progress);
+    position: absolute;
+    left: 17px;
+    font-size: 17px;
+    color: rgb(167 42 32);
+}
+
+.container .instructions h2 {
+    color: rgb(167 42 32);
+
+}
+
+.container .instructions ol li {
+    padding: 5px 10px 5px 20px;
+}
+
+
+.container .nutrition {
+    color: rgb(167 42 32);
+}
+
+.container .nut {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container .table tr td:nth-of-type(2) {
+
+    padding-bottom: 8px;
+
+}
+
+.container .table tr {
+    position: relative;
+}
+
+.container .table tr:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    left: 0px;
+    top: 21.4px;
+}
+
+.container .table tr td:nth-of-type(2) {
+    color: rgb(167 42 32);
+    font-weight: 800;
+}
